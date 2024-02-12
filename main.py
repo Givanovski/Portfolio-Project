@@ -7,6 +7,7 @@ OWN_EMAIL = os.environ.get("OWN_EMAIL")
 OWN_PASSWORD = os.environ.get("OWN_PASSWORD")
 
 app = Flask(__name__)
+app.config['SECRET_KEY'] = os.environ.get('FLASK_KEY')
 
 
 @app.route("/", methods=["GET", "POST"])
