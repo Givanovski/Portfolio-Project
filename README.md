@@ -10,7 +10,7 @@ Portfolio Project is a website created with Flask framework, Bootstrap 5, CSS, H
 
 ## Deployment
 
-This project is deployed on Render and can be accessed at 
+This project is deployed on Render and can be accessed at https://ivanovski.onrender.com
 
 ## Future Development
 
