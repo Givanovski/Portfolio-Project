@@ -14,7 +14,7 @@
   <link href="static/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i&family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i&family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="static/vendor/aos/aos.css" rel="stylesheet">
@@ -40,7 +40,7 @@
 
       <div class="profile">
         <img src="static/img/goran.jpg" alt="" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="index.html">Goran Ivanovski</a></h1>
+        <h2 class="text-light"><a href="index.html">Goran Ivanovski</a></h2>
         <div class="social-links mt-3 text-center">
           <a href="https://twitter.com/home" class="twitter" target="_blank"><i class="bx bxl-twitter"></i></a>
           <a href="https://www.facebook.com/" class="facebook" target="_blank"><i class="bx bxl-facebook"></i></a>
@@ -109,7 +109,7 @@
             </div>
             <p>
               I was born and raised in the lively city of Bitola, Macedonia, and I've spent over 10 years in the world of entrepreneurship. Now, I'm diving into the ever-evolving field of technology, starting with Python and web development. I'm excited to combine my business experience with my growing skills as a developer. If you'd like to connect, feel free to reach out to me at
-              <a href="mailto:goranivanovski1611@gmail.com?subject=Collaboration Opportunity&body=Hi Goran," style="color: blue; text-decoration: underline;">goranivanovski1611@gmail.com</a>
+              <a href="mailto:goranivanovski1611@gmail.com?subject=Collaboration%20Opportunity&body=Hi%20Goran," style="color: blue; text-decoration: underline;">goranivanovski1611@gmail.com</a>
             </p>
           </div>
         </div>
@@ -381,6 +381,7 @@
             name="sentMessage"
             action="{{ url_for('home') }}"
             method="post"
+            autocomplete="off"
           >
             <div class="form-floating">
               <input
@@ -390,7 +391,7 @@
                 type="text"
                 placeholder="Enter your name..."
                 required
-              />
+              >
               <label for="name">Name</label>
             </div>
             <div class="form-floating">
@@ -401,7 +402,7 @@
                 type="email"
                 placeholder="Enter your email..."
                 required
-              />
+              >
               <label for="email">Email address</label>
             </div>
             <div class="form-floating">
@@ -412,7 +413,7 @@
                 type="tel"
                 placeholder="Enter your subject..."
                 required
-              />
+              >
               <label for="subject">Subject</label>
             </div>
             <div class="form-floating">
@@ -426,7 +427,6 @@
               ></textarea>
               <label for="message">Message</label>
             </div>
-            <br />
             <button
               class="btn btn-primary text-uppercase"
               id="submitButton"
@@ -436,10 +436,7 @@
             </button>
           </form>
           </div>
-
         </div>
-
-      </div>
     </section><!-- End Contact Section -->
 
   </main><!-- End #main -->
