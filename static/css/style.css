@@ -306,6 +306,107 @@ h6 {
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
+/* Container styling */
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f8f9fa; /* Light background for contrast */
+}
+
+/* Card styling */
+.portfolio-item {
+    width: 100%;
+    max-width: 430px; /* Consistent width for all cards */
+    height: 530px; /* Consistent height for all cards */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.portfolio-item-small-img .portfolio-card img {
+  width: 100%; /* Full width of the container */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 150px; /* Set a maximum height for the image */
+  object-fit: cover; 
+}
+
+.portfolio-card {
+    background-color: #ffffff; /* White background for cards */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensure content and buttons are aligned */
+    height: 100%; /* Ensure the card fills the entire item */
+    overflow: hidden; /* Prevent content overflow */
+}
+
+.portfolio-card:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+}
+
+/* Image styling */
+.portfolio-card img {
+    border-radius: 10px;
+    max-width: 100%;
+    max-height: 50%; /* Reduce image height to allow space for content */
+    margin: auto;
+    display: block;
+    object-fit: contain; /* Ensure the image maintains its aspect ratio */
+    transition: transform 0.3s;
+}
+
+.portfolio-card:hover img {
+    transform: scale(1.05); /* Image zoom on hover */
+}
+
+/* Text and button container */
+.portfolio-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+/* Button styling */
+.portfolio-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.portfolio-links button {
+    background-color: #007bff; /* Primary blue color */
+    color: white;
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2); /* Button shadow */
+}
+
+.portfolio-links button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+.portfolio-links button:focus {
+    outline: none; /* Remove focus outline */
+}
+
 section {
   padding: 60px 0;
   overflow: hidden;
